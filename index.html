@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asesoría Archivística | Gestión documental para empresas</title>
+  <meta name="description" content="Consultoría, asesoría y capacitación en gestión documental para empresas privadas, a cargo de un historiador y archivista profesional. Suscríbase al boletín y reciba cada episodio con su nota técnica.">
+  <link rel="canonical" href="https://asesoriaarchivistica.co/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://asesoriaarchivistica.co/">
+  <meta property="og:title" content="Asesoría Archivística | Gestión documental para empresas">
+  <meta property="og:description" content="Consultoría, asesoría y capacitación en gestión documental, a cargo de un historiador y archivista profesional.">
+  <!-- <meta property="og:image" content="https://asesoriaarchivistica.co/og.jpg"> (1200x630 px, opcional) -->
+
+  <meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="progreso" aria-hidden="true"><span class="progreso__barra"></span></div>
+
+  <!-- ===================== ENCABEZADO ===================== -->
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="marca" href="#inicio">Asesoría <span>Archivística</span></a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#ciclo">Método</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#boletin">Podcast</a>
+        <a class="boton boton--chico" href="#suscripcion">Suscribirme</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ===================== 1. HERO ===================== -->
+    <section class="hero">
+      <div class="contenedor hero__rejilla">
+        <div class="hero__texto">
+          <p class="hero__kicker">Historiador y archivista profesional</p>
+          <h1>Gestión documental con criterio profesional para empresas que no pueden permitirse perder un documento.</h1>
+          <p class="hero__sub">
+            Soy <strong>Juan Pablo Santos Florez</strong>, Historiador y Archivista con T.P. N.º 1120. Asesoro y capacito
+            a empresas privadas en la organización, conservación y control de sus documentos físicos y electrónicos.
+          </p>
+
+          <form class="form-ml form-ml--linea" id="suscripcion" action="https://assets.mailerlite.com/jsonp/2706443/forms/201145862272845823/subscribe" method="post">
+            <p class="form-ml__titulo">Reciba cada episodio del podcast con una nota técnica que no se publica en YouTube.</p>
+            <div class="form-ml__campos">
+              <div class="campo">
+                <label for="nombre-1">Nombre</label>
+                <input id="nombre-1" type="text" name="fields[name]" autocomplete="given-name" required>
+              </div>
+              <div class="campo">
+                <label for="correo-1">Correo electrónico</label>
+                <input id="correo-1" type="email" name="fields[email]" autocomplete="email" inputmode="email" required>
+              </div>
+            </div>
+            <label class="consentimiento">
+              <input type="checkbox" name="fields[autorizacion_datos]" value="Si" required>
+              <span>Autorizo el tratamiento de mis datos personales conforme a la <a href="politica-datos.html" target="_blank" rel="noopener">Política de Tratamiento de Datos Personales</a>.</span>
+            </label>
+            <div class="trampa" aria-hidden="true">
+              <label>No llenar este campo <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+            </div>
+            <input type="hidden" name="ml-submit" value="1">
+            <input type="hidden" name="anticsrf" value="true">
+            <button class="boton" type="submit">Suscribirme al boletín</button>
+            <p class="mensaje-error" role="alert">No fue posible completar la suscripción. Intente de nuevo en unos minutos.</p>
+            <p class="microtexto">Un correo por episodio. Puede cancelar en cualquier momento.</p>
+          </form>
+        </div>
+
+        <!-- Pila documental 3D: reacciona al puntero -->
+        <div class="pila" aria-hidden="true">
+          <div class="pila__escena">
+            <div class="pila__carpeta"></div>
+            <div class="hoja hoja--5"><span class="hoja__codigo">200-07</span><span class="hoja__titulo">Historia laboral</span></div>
+            <div class="hoja hoja--4"><span class="hoja__codigo">300-14</span><span class="hoja__titulo">Libro mayor</span></div>
+            <div class="hoja hoja--3"><span class="hoja__codigo">100-02</span><span class="hoja__titulo">Acta de asamblea</span></div>
+            <div class="hoja hoja--2"><span class="hoja__codigo">300-09</span><span class="hoja__titulo">Comprobante de egreso</span></div>
+            <div class="hoja hoja--1 hoja--trd">
+              <div class="trd__cabeza">
+                <span>Tabla de retención documental</span>
+                <span>Hoja 1 de 4</span>
+              </div>
+              <table class="trd__tabla">
+                <thead><tr><th>Código</th><th>Serie</th><th>AG</th><th>AC</th><th>CT</th><th>E</th></tr></thead>
+                <tbody>
+                  <tr><td>100-02</td><td>Actas</td><td>2</td><td>8</td><td>x</td><td></td></tr>
+                  <tr><td>200-07</td><td>Historias laborales</td><td>4</td><td>76</td><td></td><td>x</td></tr>
+                  <tr><td>300-09</td><td>Comprobantes</td><td>2</td><td>8</td><td></td><td>x</td></tr>
+                  <tr><td>300-14</td><td>Libros contables</td><td>2</td><td>8</td><td>x</td><td></td></tr>
+                </tbody>
+              </table>
+              <span class="hoja__sello">Archivo</span>
+            </div>
+          </div>
+          <p class="pila__nota">Ejemplo ilustrativo. Los plazos reales dependen de la normativa aplicable a cada empresa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 2. CICLO VITAL (scroll narrativo) ===================== -->
+    <section class="ciclo" id="ciclo" aria-labelledby="ciclo-titulo">
+      <div class="ciclo__fijo">
+        <div class="ciclo__panel">
+          <h2 id="ciclo-titulo">Del archivo acumulado al archivo que protege a la empresa</h2>
+          <ol class="ciclo__pasos">
+            <li class="ciclo__paso activo" data-paso="0">Acumulación</li>
+            <li class="ciclo__paso" data-paso="1">Clasificación</li>
+            <li class="ciclo__paso" data-paso="2">Disposición final</li>
+          </ol>
+          <div class="ciclo__textos">
+            <div class="ciclo__texto activo" data-paso="0">
+              <p>Se guarda todo y nada se encuentra. Así empieza el riesgo:</p>
+              <ul class="ciclo__riesgos">
+                <li>Costo de almacenamiento que crece cada año.</li>
+                <li>Soportes que no aparecen ante la DIAN, la UGPP o un juez.</li>
+                <li>Datos personales conservados más tiempo del justificado.</li>
+                <li>Documentos electrónicos sin garantías de autenticidad.</li>
+              </ul>
+            </div>
+            <div class="ciclo__texto" data-paso="1">
+              <p>Cada documento pertenece a una serie documental. Cada serie tiene un código, un responsable y un plazo de retención sustentado en la norma.</p>
+            </div>
+            <div class="ciclo__texto" data-paso="2">
+              <p>Cumplido el plazo, se conserva lo que tiene valor permanente y se elimina, con acta y soporte técnico, lo que ya cumplió su función.</p>
+              <p class="ciclo__cierre">Ese criterio es el que diseño con cada empresa.</p>
+            </div>
+          </div>
+          <p class="ciclo__ayuda">Siga bajando para ver el proceso.</p>
+        </div>
+
+        <div class="ciclo__escena" aria-hidden="true">
+          <div class="ciclo__mundo">
+            <div class="ciclo__caja"></div>
+            <span class="ciclo__etiqueta" data-etiqueta="col-0">Gerencia</span>
+            <span class="ciclo__etiqueta" data-etiqueta="col-1">Gestión humana</span>
+            <span class="ciclo__etiqueta" data-etiqueta="col-2">Contabilidad</span>
+            <span class="ciclo__etiqueta ciclo__etiqueta--oro" data-etiqueta="conserva">Conservación total</span>
+            <span class="ciclo__etiqueta" data-etiqueta="elimina">Eliminación con acta</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. DIAGNÓSTICO INTERACTIVO ===================== -->
+    <section class="seccion diagnostico" id="diagnostico">
+      <div class="contenedor diagnostico__rejilla">
+        <div>
+          <h2>¿Qué tan expuesto está el archivo de su empresa?</h2>
+          <p class="seccion__lead">Cinco preguntas. Responda según la situación actual de su empresa y vea el resultado en tiempo real. Nada de esto se envía ni se guarda.</p>
+
+          <ol class="preguntas">
+            <li class="pregunta">
+              <p>¿Su empresa tiene definido cuánto tiempo conserva cada tipo de documento?</p>
+              <div class="pregunta__opciones" role="group" aria-label="Respuesta">
+                <button type="button" data-valor="si" aria-pressed="false">Sí</button>
+                <button type="button" data-valor="no" aria-pressed="false">No</button>
+              </div>
+            </li>
+            <li class="pregunta">
+              <p>¿Podría entregar en 48 horas un soporte de hace cinco años si lo pide la DIAN o un juez?</p>
+              <div class="pregunta__opciones" role="group" aria-label="Respuesta">
+                <button type="button" data-valor="si" aria-pressed="false">Sí</button>
+                <button type="button" data-valor="no" aria-pressed="false">No</button>
+              </div>
+            </li>
+            <li class="pregunta">
+              <p>¿Cuando elimina documentos, deja un acta que justifique la eliminación?</p>
+              <div class="pregunta__opciones" role="group" aria-label="Respuesta">
+                <button type="button" data-valor="si" aria-pressed="false">Sí</button>
+                <button type="button" data-valor="no" aria-pressed="false">No</button>
+              </div>
+            </li>
+            <li class="pregunta">
+              <p>¿Las hojas de vida y los datos de personas retiradas tienen un plazo de conservación definido?</p>
+              <div class="pregunta__opciones" role="group" aria-label="Respuesta">
+                <button type="button" data-valor="si" aria-pressed="false">Sí</button>
+                <button type="button" data-valor="no" aria-pressed="false">No</button>
+              </div>
+            </li>
+            <li class="pregunta">
+              <p>¿Sus documentos digitalizados o electrónicos tienen reglas de autenticidad y respaldo?</p>
+              <div class="pregunta__opciones" role="group" aria-label="Respuesta">
+                <button type="button" data-valor="si" aria-pressed="false">Sí</button>
+                <button type="button" data-valor="no" aria-pressed="false">No</button>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <aside class="medidor" aria-live="polite">
+          <svg class="medidor__svg" viewBox="0 0 240 140" role="img" aria-label="Indicador de exposición documental">
+            <path class="medidor__fondo" d="M20 120 A100 100 0 0 1 220 120" />
+            <path class="medidor__arco" d="M20 120 A100 100 0 0 1 220 120" pathLength="100" />
+            <g class="medidor__aguja"><line x1="120" y1="120" x2="120" y2="34" /><circle cx="120" cy="120" r="7" /></g>
+          </svg>
+          <p class="medidor__conteo"><span data-respondidas>0</span> de 5 respondidas</p>
+          <p class="medidor__nivel" data-nivel>Responda las preguntas</p>
+          <p class="medidor__texto" data-texto>El indicador se mueve con cada respuesta.</p>
+          <a class="boton boton--borde medidor__cta" href="#suscripcion" hidden>Recibir las notas técnicas</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== 4. AUTORIDAD ===================== -->
+    <section class="seccion autoridad">
+      <div class="contenedor autoridad__rejilla">
+        <div>
+          <h2>Decidir qué se conserva y qué se elimina es una decisión técnica y jurídica.</h2>
+          <p>Soy historiador y archivista profesional, con tarjeta profesional conforme a la Ley 1409 de 2010. La gestión documental no es ordenar cajas: es decidir, con fundamento normativo y conocimiento de la organización, qué documentos conservar, durante cuánto tiempo y con qué garantías.</p>
+          <p>Esa es la diferencia entre un archivo que acumula y un archivo que protege a la empresa. En el podcast <strong>Gestión Documental para la gente</strong> analizo la normativa y la práctica de la gestión documental en Colombia.</p>
+        </div>
+
+        <dl class="rotulo">
+          <div class="rotulo__cabeza">Rótulo de identificación</div>
+          <div class="rotulo__fila"><dt>Productor</dt><dd>Juan Pablo Santos Florez</dd></div>
+          <div class="rotulo__fila"><dt>Formación</dt><dd>Historiador, Universidad Industrial de Santander</dd></div>
+          <div class="rotulo__fila"><dt>Habilitación</dt><dd>Archivista, T.P. N.º 1120</dd></div>
+          <div class="rotulo__fila"><dt>Experiencia</dt><dd>4 años</dd></div>
+          <div class="rotulo__fila"><dt>Sectores</dt><dd>Sector Privado y Público</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===================== 5. SERVICIOS (carpetas) ===================== -->
+    <section class="seccion servicios" id="servicios">
+      <div class="contenedor">
+        <h2>Cómo trabajo con su empresa</h2>
+        <p class="seccion__lead">Abra cada carpeta para ver qué incluye.</p>
+
+        <div class="carpetas">
+          <div class="carpetas__pestanas" role="tablist" aria-label="Servicios">
+            <button class="pestana" role="tab" id="tab-consultoria" aria-controls="panel-consultoria" aria-selected="true">Consultoría</button>
+            <button class="pestana" role="tab" id="tab-asesoria" aria-controls="panel-asesoria" aria-selected="false" tabindex="-1">Asesoría</button>
+            <button class="pestana" role="tab" id="tab-capacitacion" aria-controls="panel-capacitacion" aria-selected="false" tabindex="-1">Capacitación</button>
+          </div>
+
+          <div class="carpeta" role="tabpanel" id="panel-consultoria" aria-labelledby="tab-consultoria">
+            <div class="carpeta__hoja">
+              <h3>Instrumentos que ordenan la gestión documental</h3>
+              <p>Diseño los instrumentos con plazos sustentados en la normativa aplicable a su sector. Cuando la empresa organiza sus fondos, dirijo y valido técnicamente el proceso.</p>
+              <ul>
+                <li>Diagnóstico integral de archivos</li>
+                <li>Cuadro de clasificación documental</li>
+                <li>Tablas de retención documental</li>
+                <li>Programa de gestión documental</li>
+                <li>Política de documento electrónico</li>
+                <li>Dirección técnica de procesos de organización</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="carpeta" role="tabpanel" id="panel-asesoria" aria-labelledby="tab-asesoria" hidden>
+            <div class="carpeta__hoja">
+              <h3>Acompañamiento continuo a su equipo</h3>
+              <p>Resolvemos casos concretos a medida que se presentan, con criterio técnico y respaldo normativo.</p>
+              <ul>
+                <li>Qué se puede eliminar y cómo soportarlo</li>
+                <li>Respuesta a requerimientos y auditorías</li>
+                <li>Conservación de documentos electrónicos como prueba</li>
+                <li>Retención documental y protección de datos personales</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="carpeta" role="tabpanel" id="panel-capacitacion" aria-labelledby="tab-capacitacion" hidden>
+            <div class="carpeta__hoja">
+              <h3>Formación práctica para quienes producen los documentos</h3>
+              <p>Capacitaciones en la empresa o talleres abiertos virtuales, diseñados según el sector, los cargos y los procesos.</p>
+              <ul>
+                <li>Responsables de archivo y gestión documental</li>
+                <li>Talento humano</li>
+                <li>Áreas contable y jurídica</li>
+                <li>Talleres abiertos virtuales</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="nota-publico">También acompaño a entidades públicas en la elaboración y actualización de sus instrumentos archivísticos.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 6. BOLETÍN ===================== -->
+    <section class="seccion boletin" id="boletin">
+      <div class="contenedor">
+        <h2>Qué recibe al suscribirse</h2>
+        <ul class="beneficios">
+          <li><strong>Cada nuevo episodio</strong>Apenas se publica, directamente en su correo.</li>
+          <li><strong>Una nota técnica por episodio</strong>Normas citadas, plazos de conservación y su aplicación práctica en la empresa.</li>
+          <li><strong>Cambios normativos</strong>Las novedades que afectan la gestión documental de las empresas.</li>
+          <li><strong>Prioridad en talleres</strong>Acceso preferente a los cupos de los talleres abiertos.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 7. PREGUNTAS FRECUENTES ===================== -->
+    <section class="seccion faq-seccion">
+      <div class="contenedor">
+        <h2>Lo que suelen preguntar las empresas</h2>
+        <div class="faq">
+          <details>
+            <summary>¿Mi empresa está obligada a tener tablas de retención documental?</summary>
+            <p>No en los mismos términos que una entidad pública, pero sí está obligada a conservar sus libros, soportes contables, tributarios y laborales durante plazos legales. Una tabla de retención es la forma ordenada de cumplir esas obligaciones y de eliminar con respaldo lo que ya no se necesita.</p>
+          </details>
+          <details>
+            <summary>¿Trabaja con empresas pequeñas?</summary>
+            <p>Sí. El alcance del trabajo se ajusta al volumen documental y a los riesgos de cada empresa.</p>
+          </details>
+          <details>
+            <summary>¿Atiende fuera de Bogota?</summary>
+            <p>Si MODALIDAD: PRESENCIAL, REMOTA O MIXTA.</p>
+          </details>
+          <details>
+            <summary>¿Ofrece capacitaciones a la medida?</summary>
+            <p>Sí. Se diseñan según el sector, los cargos y los procesos de cada empresa.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 8. CIERRE ===================== -->
+    <section class="seccion cierre">
+      <div class="contenedor cierre__rejilla">
+        <div>
+          <h2>Escuche el próximo episodio con la nota técnica en su correo.</h2>
+          <p class="contacto-discreto">Para consultas sobre servicios, escriba a <a href="mailto:contacto@asesoriaarchivistica.co">contacto@asesoriaarchivistica.co</a>.</p>
+        </div>
+
+        <form class="form-ml form-ml--tarjeta" action="https://assets.mailerlite.com/jsonp/2706443/forms/201145862272845823/subscribe" method="post">
+          <div class="campo">
+            <label for="nombre-2">Nombre</label>
+            <input id="nombre-2" type="text" name="fields[name]" autocomplete="given-name" required>
+          </div>
+          <div class="campo">
+            <label for="correo-2">Correo electrónico</label>
+            <input id="correo-2" type="email" name="fields[email]" autocomplete="email" inputmode="email" required>
+          </div>
+          <label class="consentimiento">
+            <input type="checkbox" name="fields[autorizacion_datos]" value="Si" required>
+            <span>Autorizo el tratamiento de mis datos personales conforme a la <a href="politica-datos.html" target="_blank" rel="noopener">Política de Tratamiento de Datos Personales</a>.</span>
+          </label>
+          <div class="trampa" aria-hidden="true">
+            <label>No llenar este campo <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+          </div>
+          <input type="hidden" name="ml-submit" value="1">
+          <input type="hidden" name="anticsrf" value="true">
+          <button class="boton" type="submit">Suscribirme al boletín</button>
+          <p class="mensaje-error" role="alert">No fue posible completar la suscripción. Intente de nuevo en unos minutos.</p>
+          <p class="microtexto">Puede cancelar la suscripción en cualquier momento.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <span>Juan Pablo Santos Florez, historiador y archivista, T.P. N.º 1120</span>
+      <span>
+        <a href="mailto:contacto@asesoriaarchivistica.co">contacto@asesoriaarchivistica.co</a>
+        <a href="politica-datos.html">Política de Tratamiento de Datos Personales</a>
+        <span>© 2026</span>
+      </span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
